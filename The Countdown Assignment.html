@@ -1,0 +1,104 @@
+<!--Eissej Wilson -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <Title>Blast Off Countdown</Title>
+</head>
+<script>
+// The scripts lets the browser know we are using JavaScript and not HTML
+function StartTheCountdown()
+{ //The Brackets act as a body for the functions variable which allows the button to fuction properly
+
+    //declare variables
+var countdown = 10;
+//Used to keep trach of real time 1000=1 second
+//1000 = 1 second because we are using milliseconds
+var timeout = 10000;
+// Used to set time
+
+// This set of code fuctions the number changing from 10 to 1 then to blast off by going down in 1 second intervals.
+
+setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = "Blast Off!"; 
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+})
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    setTimeout(() => {
+    document.getElementById("CountdownDisplay").innerHTML = countdown;
+    countdown = countdown - 1;
+}, timeout)
+    timeout = timeout - 1000;
+
+    
+
+   
+}
+</script>
+<body>
+    <h1 style="color: red;">Blast Off!</h1> <!-- My creative content is the color of text-->
+    <p>This is a 10 second countdown!</p>
+    <h2>The Countdown</h2><button "button" onclick="StartTheCountdown()">Begin The Countdown </button>
+    <!-- This is how you comment in HTMl & also this is a button to start the countdown when the user clicks it
+    -->
+    <p style="color: red"  id="CountdownDisplay">10</p>
+</body>
+</html>
+<!-- This assignment challenged me, made me think, pay attention, and most importantly learn a new skiil even practicing ones i learned here recently - Eissej Wilson-->
